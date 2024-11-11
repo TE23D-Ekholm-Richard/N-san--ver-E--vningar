@@ -33,3 +33,65 @@
 // }
 // Console.ReadLine();
 
+// for(int i = 1; i<33 ; i++){
+//     Console.WriteLine("HelloWorld!");
+// }
+
+// while(true){
+
+// Console.WriteLine("Skriv in rätt lösenord");
+// string lösenord = Console.ReadLine();
+
+// if(lösenord == "sigma"){
+
+//     Console.WriteLine("Välkommen");
+
+
+// }
+
+// else{
+//     Console.WriteLine("Fel lösenord bozo");
+// }
+
+
+
+
+// Console.ReadLine();
+// }
+
+// for(int i = 0 ; i<6 ; i++){
+
+// Console.WriteLine("Skriv ett tal");
+
+// string tal = Console.ReadLine();
+
+// int a = 0;
+
+// bool success  = int.TryParse(tal, out a);
+
+// if (a > 5 ){
+// Console.WriteLine("Högre en 5!");
+// }
+// }
+
+
+while(true){
+Console.WriteLine("Skriv in en siffra");
+string nummer = Console.ReadLine();
+
+int i = 5;
+
+bool success = int.TryParse(nummer, out i);
+
+if (i == 5){
+    Console.WriteLine("Grattis");
+}
+
+else{
+    Console.WriteLine("Skriv ett annat nummer");
+}
+
+
+
+Console.ReadLine();
+}
