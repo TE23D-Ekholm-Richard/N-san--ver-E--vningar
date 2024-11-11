@@ -75,23 +75,65 @@
 // }
 
 
-while(true){
-Console.WriteLine("Skriv in en siffra");
-string nummer = Console.ReadLine();
+// while(true){
+// Console.WriteLine("Skriv in en siffra");
+// string nummer = Console.ReadLine();
 
-int i = 5;
+// bool success = int.TryParse(nummer, out int i);
 
-bool success = int.TryParse(nummer, out i);
+// if (success){
+//     Console.WriteLine("Grattis");
+//     break;
+// }
 
-if (i == 5){
-    Console.WriteLine("Grattis");
-}
-
-else{
-    Console.WriteLine("Skriv ett annat nummer");
-}
-
+// else{
+//     Console.WriteLine("försök igen");
+// }
 
 
-Console.ReadLine();
+
+// Console.ReadLine();
+// }
+
+while (true)
+{
+
+    Console.WriteLine("Skriv in en siffra det kan vara vilken som helst");
+    string siffra = Console.ReadLine();
+
+
+    bool success = int.TryParse(siffra, out int i);
+
+    if (success == true)
+    {
+        if (i == 5)
+        {
+            Console.WriteLine("Gratiis");
+            Console.ReadLine();
+            break;
+
+        }
+
+
+        if (i > 5)
+        {
+            Console.WriteLine("lägre tal");
+        }
+        else
+        {
+            Console.WriteLine("högre tal");
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+    Console.WriteLine();
 }
